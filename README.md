@@ -4,8 +4,10 @@ Covid-19 Information Website, Build with NodeJS.
 Consume API : https://github.com/mathdroid/covid-19-api
 
 ## RUN Web Application
-  Require : NPM
+  Require : NPM NodeJS
   
-  Command : 
-   *npm install
-   *npm run start-dev
+  To run:
+  ```
+  npm install
+  npm run start-dev
+  ```
