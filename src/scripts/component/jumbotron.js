@@ -29,16 +29,30 @@ class Jumbotron extends HTMLElement {
                 color: white;
                 margin-bottom: 20px;
             }
-            div.slicing {
-                position:relative;
-                top:220px;
-                widht:100%;
-                height: 30px;
-                max-height:65px;
-                background-color:#39CA36;
-                transform: rotate(-1.35deg);
-                z-index:-1;
+
+            @media only screen and (min-width: 1000px){
+                div.slicing {
+                    position:relative;
+                    top:220px;
+                    widht:100%;
+                    height: 30px;
+                    max-height:65px;
+                    background-color:#39CA36;
+                    transform: rotate(-1.35deg);
+                    z-index:-1;
+                }
+
+                a {
+                    position: relative;
+                    top:140px;
+                }
+
+                .tombol:hover {
+                    background-color: white;
+                    cursor: pointer;
+                }
             }
+
             h2 {
                 position: relative;
                 top:170px;
@@ -56,19 +70,7 @@ class Jumbotron extends HTMLElement {
                 font-weight: 100;
             }
             
-            a {
-                position: relative;
-                top:140px;
-            }
-
-            .tombol {
-                width: 10%;
-            }
-
-            .tombol:hover {
-                background-color: white;
-                cursor: pointer;
-            }
+            
         </style>
         `;
         //container
@@ -94,7 +96,7 @@ class Jumbotron extends HTMLElement {
 
         // button
         const but = document.createElement('a');
-        but.innerText = 'See More';
+        but.innerText = 'Scroll For More';
         but.classList.add('btn');
         but.classList.add('btn-success');
         but.classList.add('tombol');
