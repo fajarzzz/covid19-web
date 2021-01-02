@@ -31,7 +31,7 @@ class Jumbotron extends HTMLElement {
             }
             div.slicing {
                 position:relative;
-                top:260px;
+                top:220px;
                 widht:100%;
                 height: 30px;
                 max-height:65px;
@@ -55,11 +55,25 @@ class Jumbotron extends HTMLElement {
                 font-size: 1.5rem;
                 font-weight: 100;
             }
+            
+            a {
+                position: relative;
+                top:140px;
+            }
 
+            .tombol {
+                width: 10%;
+            }
+
+            .tombol:hover {
+                background-color: white;
+                cursor: pointer;
+            }
         </style>
         `;
         //container
         const div = document.createElement('div');
+        div.classList.add('text-center')
 
         //throw image
         const imgs = new Image();
@@ -77,6 +91,15 @@ class Jumbotron extends HTMLElement {
         const letter = document.createElement('p');
         letter.innerText = 'This website show you covid-19 global update data to inform the details of covid-19 in a global scope, also this website provide you how to apply medical protocol on pandemic period';
         div.appendChild(letter);
+
+        // button
+        const but = document.createElement('a');
+        but.innerText = 'See More';
+        but.classList.add('btn');
+        but.classList.add('btn-success');
+        but.classList.add('tombol');
+        but.setAttribute('href', '#');
+        div.appendChild(but);
 
         // slicing
         const slice = document.createElement('div');

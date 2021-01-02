@@ -12,123 +12,225 @@
         body,
         html {
             height: 100%;
+            position: relative;
         }
 
         .back {
             background-color: #39CA36;
             padding: 2rem 0;
         }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .main-container {
+            min-height: 100vh;
+            /* will cover the 100% of viewport */
+            overflow: hidden;
+            display: block;
+            position: relative;
+            /* height of footer */
+        }
+
+        .tabel-contact {
+            padding: 2rem 0;
+            color: black;
+        }
     </style>
 </head>
 
 <body>
-    <nav-bar>
-    </nav-bar>
-    <jumbotron-section>
-    </jumbotron-section>
-    <div class="container" style="position: relative;">
-        <h2 class="text-center">Covid-19 Global Update</h2>
-        <hr class="line-bold my-3">
+    <div class="main-container">
+        <nav-bar>
+        </nav-bar>
+        <jumbotron-section>
+        </jumbotron-section>
+        <div class="container" style="position: relative;">
+            <h2 class="text-center">Covid-19 Global Update</h2>
+            <hr class="line-bold my-3">
 
-        <div class="row position-relative" style="top: 0;">
-            <div class="col-md-12">
-                <div class="card-deck">
-                    <div class="card case p-4" id="confirmed">
-                        <p><b>Global</b> Case</p>
-                        <hr class="line-bold">
-                    </div>
-                    <div class="card case p-4" id="recovered">
-                        <p><b>Global</b> Recovered</p>
-                        <hr class="line-bold">
-                    </div>
-                    <div class="card case p-4" id="death">
-                        <p><b>Global</b> Deaths</p>
-                        <hr class="line-bold">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="back mt-5">
-        <h2 class="text-center" style="color: white;">Covid 19 Protocols & Basic Protective Measures</h2>
-        <hr class="line-bold w-25 my-3" style="background-color: white;">
-        <div class="container">
-            <div class="row my-4">
-                <div class="col-md-12 mb-1">
+            <div class="row position-relative" style="top: 0;">
+                <div class="col-md-12">
                     <div class="card-deck">
-                        <div class="card p-3 text-center">
-                            <div class="card-body">
-                                <div class="feature-icon">
-                                    <img src="https://covid-19.bogorkab.go.id/frontend/anz/img/png/property.png" alt="">
-                                </div>
-                                <h5 class="card-title mt-3">Stay At Home</h5>
-                                <p class="card-text">Don't leave the house if there is no urgent need.</p>
-                            </div>
+                        <div class="card case p-4" id="confirmed">
+                            <p><b>Global</b> Case</p>
+                            <hr class="line-bold">
                         </div>
-                        <div class="card p-3 text-center">
-                            <div class="card-body">
-                                <div class="feature-icon">
-                                    <img src="https://covid-19.bogorkab.go.id/frontend/anz/img/png/distance.png" alt="">
-                                </div>
-                                <h5 class="card-title mt-3">Use Mask</h5>
-                                <p class="card-text">Wear the mask properly wherever you go.</p>
-                            </div>
+                        <div class="card case p-4" id="recovered">
+                            <p><b>Global</b> Recovered</p>
+                            <hr class="line-bold">
                         </div>
-                        <div class="card p-3 text-center">
-                            <div class="card-body">
-                                <div class="feature-icon">
-                                    <img src="https://covid-19.bogorkab.go.id/frontend/anz/img/png/wash-your-hands.png"
-                                        alt="">
-                                </div>
-                                <h5 class="card-title mt-3">Wash Your Hands</h5>
-                                <p class="card-text">Regularly wash your hands with with soap and water.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 mb-1">
-                    <div class="card-deck">
-                        <div class="card p-3 text-center">
-                            <div class="card-body">
-                                <div class="feature-icon">
-                                    <img src="https://covid-19.bogorkab.go.id/frontend/anz/img/png/social-distancing.png"
-                                        alt="">
-                                </div>
-                                <h5 class="card-title mt-3">Maintain Social Distancing</h5>
-                                <pc class="card-text">Maintain at least 1 metre distance between yourself and anyone.
-                                </pc>
-                            </div>
-                        </div>
-                        <div class="card p-3 text-center">
-                            <div class="card-body">
-                                <div class="feature-icon">
-                                    <img src="https://covid-19.bogorkab.go.id/frontend/anz/img/png/buildings.png"
-                                        alt="">
-                                </div>
-                                <h5 class="card-title mt-3">50% Max Capacity</h5>
-                                <p class="card-text">Limiting total tourist visitors, office and outdoor activities </p>
-                            </div>
-                        </div>
-
-                        <div class="card p-3 text-center">
-                            <div class="card-body">
-                                <div class="feature-icon">
-                                    <img src="https://covid-19.bogorkab.go.id/frontend/anz/img/png/group.png" alt="">
-                                </div>
-                                <h5 class="card-title mt-3">Stay Informed</h5>
-                                <p class="card-text">Stay informed on the latest developments about COVID-19.</p>
-                            </div>
+                        <div class="card case p-4" id="death">
+                            <p><b>Global</b> Deaths</p>
+                            <hr class="line-bold">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
+        <div class="back mt-5">
+            <h2 class="text-center" style="color: white;">Covid 19 Protocols & Basic Protective Measures</h2>
+            <hr class="line-bold w-25 my-3" style="background-color: white;">
+            <div class="container">
+                <div class="row my-4">
+                    <div class="col-md-12 mb-1">
+                        <div class="card-deck">
+                            <div class="card p-3 text-center">
+                                <div class="card-body">
+                                    <div class="feature-icon">
+                                        <img src="https://covid-19.bogorkab.go.id/frontend/anz/img/png/property.png"
+                                            alt="">
+                                    </div>
+                                    <h5 class="card-title mt-3">Stay At Home</h5>
+                                    <p class="card-text">Don't leave the house if there is no urgent need.</p>
+                                </div>
+                            </div>
+                            <div class="card p-3 text-center">
+                                <div class="card-body">
+                                    <div class="feature-icon">
+                                        <img src="https://covid-19.bogorkab.go.id/frontend/anz/img/png/distance.png"
+                                            alt="">
+                                    </div>
+                                    <h5 class="card-title mt-3">Use Mask</h5>
+                                    <p class="card-text">Wear the mask properly wherever you go.</p>
+                                </div>
+                            </div>
+                            <div class="card p-3 text-center">
+                                <div class="card-body">
+                                    <div class="feature-icon">
+                                        <img src="https://covid-19.bogorkab.go.id/frontend/anz/img/png/wash-your-hands.png"
+                                            alt="">
+                                    </div>
+                                    <h5 class="card-title mt-3">Wash Your Hands</h5>
+                                    <p class="card-text">Regularly wash your hands with with soap and water.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mb-1">
+                        <div class="card-deck">
+                            <div class="card p-3 text-center">
+                                <div class="card-body">
+                                    <div class="feature-icon">
+                                        <img src="https://covid-19.bogorkab.go.id/frontend/anz/img/png/social-distancing.png"
+                                            alt="">
+                                    </div>
+                                    <h5 class="card-title mt-3">Maintain Social Distancing</h5>
+                                    <pc class="card-text">Maintain at least 1 metre distance between yourself and
+                                        anyone.
+                                    </pc>
+                                </div>
+                            </div>
+                            <div class="card p-3 text-center">
+                                <div class="card-body">
+                                    <div class="feature-icon">
+                                        <img src="https://covid-19.bogorkab.go.id/frontend/anz/img/png/buildings.png"
+                                            alt="">
+                                    </div>
+                                    <h5 class="card-title mt-3">50% Max Capacity</h5>
+                                    <p class="card-text">Limiting total tourist visitors, office and outdoor activities
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card p-3 text-center">
+                                <div class="card-body">
+                                    <div class="feature-icon">
+                                        <img src="https://covid-19.bogorkab.go.id/frontend/anz/img/png/group.png"
+                                            alt="">
+                                    </div>
+                                    <h5 class="card-title mt-3">Stay Informed</h5>
+                                    <p class="card-text">Stay informed on the latest developments about COVID-19.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tabel-contact">
+            <h2 class="text-center">Indonesia Covid 19 Hotlines</h2>
+            <hr class="line-bold my-3">
+            <div class="offset-lg-1 col-lg-10 col-md-12">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead class="thead-inverse">
+                            <tr>
+                                <th>#</th>
+                                <th>Departement</th>
+                                <th>Contact Number</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1,001</td>
+                                <td>
+                                    Layanan Pengaduan Bansos Kementerian Sosial
+                                </td>
+                                <td>0811-10-222-10</td>
+
+                            </tr>
+                            <tr>
+                                <td>1,002</td>
+                                <td>Layanan Masyarakat Kartu Prakerja</td>
+                                <td>021-25541246</td>
+                            </tr>
+                            <tr>
+                                <td>1,003</td>
+                                <td>Bantuan Langsung Tunai Desa</td>
+                                <td>1500040</td>
+                            </tr>
+                            <tr>
+                                <td>1,003</td>
+                                <td>Pembebasan Biaya Listrik (PLN)</td>
+                                <td>08122-123-123</td>
+                            </tr>
+                            <tr>
+                                <td>1,004</td>
+                                <td>Restrukturisasi Kredit atau Pembiayaan terkait dampak COVID-19 Layanan
+                                    Kontak OJK</td>
+                                <td>
+                                    081-157-157-157</td>
+                            </tr>
+                            <tr>
+                                <td>1,005</td>
+                                <td>Layanan Pengaduan Program Keluarga Harapan Kementerian Sosial</td>
+                                <td>1500299 </td>
+                            </tr>
+                            <tr>
+                                <td>1,006</td>
+                                <td>Informasi Fungsi Relawan Desa Lawan COVID-19 Kementerian Desa, PDT, dan
+                                    Transmigrasi</td>
+                                <td>
+                                    1500040</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Website Covid-19 Information</h5>
+                    <p>Created by:</p>
+                    <ul>
+                        <li>Fajar Zuliansyah Trihutama (1905394)</li>
+                        <li>Lazuardy Wibisana (NIM)</li>
+                        <li>Azka Naufal Rahman (NIM)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Javascript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
