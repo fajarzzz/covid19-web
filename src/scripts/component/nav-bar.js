@@ -1,4 +1,6 @@
 import image from '../../assets/mask-group.png';
+import "bootstrap/dist/css/bootstrap.min.css";
+
 class NavBar extends HTMLElement {
     constructor() {
         super();
@@ -11,7 +13,7 @@ class NavBar extends HTMLElement {
 
     render() {
         this.shadowDOM.innerHTML = `
-        <link href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"></link>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
             * {

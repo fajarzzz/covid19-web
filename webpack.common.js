@@ -37,10 +37,10 @@ module.exports = {
             filename: "index.html"
         }),
         new FaviconsWebpackPlugin({
-            logo: './src/assets/favicon.ico', // svg works too
-            devMode: 'light', // optional can be 'webapp' or 'light' - 'light' by default 
+            logo: './src/assets/favicon-16x16.png', // svg works too
+            devMode: 'webapp', // optional can be 'webapp' or 'light' - 'light' by default 
             inject: true,
-            prefix:'assets/'
+            prefix: 'assets/'
         })
     ]
 }
